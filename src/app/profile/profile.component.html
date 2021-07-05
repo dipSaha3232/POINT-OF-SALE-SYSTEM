@@ -1,0 +1,12 @@
+<br><br>
+<b>Username : </b> {{currentUser.username}} <br>
+<b>Password : </b> {{currentUser.password}} <br>
+<b>Role : </b> {{currentUser.role}} <br><br>
+
+<div class="link">
+    <a *ngIf = "this.userService.isAdminUser()" routerLink="/admin-panel" routerLinkActive="active">Back</a>
+</div>
+
+<div class="link">
+    <a *ngIf = "this.userService.isStaffUser()" routerLink="/staff-panel" routerLinkActive="active">Back</a>
+</div>

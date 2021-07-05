@@ -1,0 +1,20 @@
+<h2>ADD YOUR NEW ITEM</h2>
+
+<div>
+    <form>
+        Product id : <input type="text" [(ngModel)] = "product.pid" name="pid" required/> <br>
+        Price : <input type="number" [(ngModel)] = "product.price" name="price" required/> <br>
+        Category : <input type="text" [(ngModel)] = "product.category" name="category" required/> <br>
+        Size : <input type="number" [(ngModel)] = "product.size" name="size" required/> <br>
+        Color : <input type="text" [(ngModel)] = "product.color" name="color" required/> <br>
+        Brand : <input type="text" [(ngModel)] = "product.brand" name="brand" required/> <br>
+        Date of Entry : <input type="text" [(ngModel)] = "product.date_of_entry" name="date" required/> <br>
+        <button (click) = "addItem()">Add Item</button>
+    </form>
+</div>
+
+<div class="link">
+    <a routerLink="/manage-stock" routerLinkActive="active">Back</a>
+</div>
+
+<router-outlet></router-outlet>
